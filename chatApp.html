@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styli.css">
+</head>
+<body>
+    <div class="person-selcetor">
+        <button class="button person-selcetor-button active-person" id="Jimmie-selctor">Jimmie</button>
+        <button class=" button person-selector button" id="Nancy-selector">Nancy</button>
+    </div>
+    <div class="chatcontainer">
+        <h2 class="chat header">Jimmie Texting...</h2>
+        <div class="chatmessages">
+            <div class="meaasage yellow-bg">
+                <div class="message-sender">jimmie</div>
+                <div class="message-text">Hey sweetness, what`s up?</div>
+                <div class="message-timestamp">10:00am</div>
+            </div>
+            <div class="classmessage grey-bg">
+                <div class="message-sender">Nancy</div>
+                <div class="message-text">I am Ok Papa</div>
+                <div class="message-timestamp">10:02</div>
+            </div>
+            <form class="chat-input-form">
+                <input type="text" class="chat input" required placeholder="chat here jimmie..." />
+                <button type="submit" class="button send-button">send</button>
+            </form>
+            <button class="button clear-chat-button">Clear Chat</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

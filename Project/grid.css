@@ -1,0 +1,108 @@
+/* css reset from meyerweb */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my style */
+#wrapper{
+    /* background-color: yellow; */
+    /* height: 100vh; */
+}
+nav{
+    background-color: black;
+    color: aliceblue;
+    border:.1rem solid green;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    /* align-content: space-between; */
+    /* width: 50%; */
+}
+figure{
+    /* border:.1rem solid red; */
+    width:40%;
+    text-align: center;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border:.1rem solid blue; */
+    gap: 2rem;
+    /* justify-items:space-between; */
+}
+ul>li>a{
+    text-decoration: none;
+    color: aliceblue;
+    /* border: .1rem solid green; */
+}
+form{
+    /* border:.1rem solid grey; */
+    text-align: right;
+}
+form>input[type='search']:hover{
+    outline:.1rem solid red;
+}
+form>input[type='search'], button[type='submit']{
+    height:8vh;
+}
+button[type="submit"]:hover{
+    background-color: green;
+    color: aliceblue;
+}
+.product{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    height: 100vh;
+    align-items: center;
+}
+figure{
+    border: .1rem solid blue;
+}
+.product>figure{
+    border: .1rem solid blue;
+}
